@@ -32,6 +32,7 @@ const common = {
 // Default configuration
 if (TARGET === 'start' || !TARGET) {
     module.exports = merge(common, {
+        devTool: 'eval-source-map',
         devServer: {
             contentBase: PATHS.build,
             // Enable history API fallback so HTML5 History API based
