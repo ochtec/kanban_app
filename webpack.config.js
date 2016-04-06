@@ -5,7 +5,7 @@ const PATHS = {
   build: path.join(__dirname, 'build')
 };
 
-module.exports = {
+const common = {
   entry: {
     app: PATHS.app
   },
@@ -14,3 +14,11 @@ module.exports = {
     filename: 'bundle.js'
   }
 };
+
+if(TARGET === 'start' || !TARGET) {
+  module.exports = merge(common, {});
+}
+
+if(TARGET === 'build') {
+  module.exports = merge(common, {});
+}
