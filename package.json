@@ -23,6 +23,7 @@
     "webpack": "^1.12.14"
   },
   "dependencies": {
+    "node-uuid": "^1.4.7",
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
   }
